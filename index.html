@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="icon" href="images/myicon.png" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <style></style>
   </head>
   <body>
     <div class="headding">
-      <h2>Simple Calculator</h2>
+      <h2>Calculator</h2>
     </div>
     <!-- calculor container start here -->
     <div class="container">
@@ -23,151 +23,26 @@
         <!-- calculator body start here -->
         <div class="calculator_body">
           <div class="calculator_buttons">
-            <button
-              class="cal_button bracket_button"
-              onclick="
-            currentDisplay=currentDisplay+'<';
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              <</button
-            ><button
-              class="cal_button bracket_button"
-              onclick="
-            currentDisplay=currentDisplay+'>';
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              ></button
-            ><button
-              class="cal_button operator_button"
-              onclick="
-            currentDisplay=eval(currentDisplay)/100;
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              %</button
-            ><button
-              class="cal_button canel_button"
-              onclick="
-            currentDisplay='';
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              C</button
-            ><button
-              class="cal_button"
-              onclick="
-              currentDisplay=currentDisplay+'7';
-              document.querySelector('.display').value = currentDisplay;"
-            >
-              7</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'8';
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              8</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'9'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              9</button
-            ><button
-              class="cal_button operator_button"
-              onclick="
-            currentDisplay=currentDisplay+'/'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              /</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'4'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              4</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'5'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              5</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'6'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              6</button
-            ><button
-              class="cal_button operator_button"
-              onclick="
-            currentDisplay=currentDisplay+'*'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              *</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'1'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              1</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'2'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              2</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'3'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              3</button
-            ><button
-              class="cal_button operator_button"
-              onclick="
-            currentDisplay=currentDisplay+'-'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              -</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'0'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              0</button
-            ><button
-              class="cal_button"
-              onclick="
-            currentDisplay=currentDisplay+'.'
-            document.querySelector('.display').value = currentDisplay;
-            "
-            >
-              .</button
-            ><button
-              class="cal_button answer_button"
-              onclick="
-
-               currentDisplay=eval(currentDisplay);
-               document.querySelector('.display').value = currentDisplay;
-               
-               "
-            >
-              =</button
-            ><button
-              class="cal_button operator_button"
-              onclick="
-            currentDisplay=currentDisplay+'+'
-            document.querySelector('.display').value = currentDisplay;"
-            >
-              +
-            </button>
+            <button class="cal_button bracket_button">⌫</button
+            ><button class="cal_button bracket_button mode">x2</button
+            ><button class="cal_button operator_button">%</button
+            ><button class="cal_button canel_button">C</button
+            ><button class="cal_button num7">7</button
+            ><button class="cal_button num8">8</button
+            ><button class="cal_button num9">9</button
+            ><button class="cal_button operator_button">/</button
+            ><button class="cal_button num4">4</button
+            ><button class="cal_button num5">5</button
+            ><button class="cal_button num6">6</button
+            ><button class="cal_button operator_button">*</button
+            ><button class="cal_button num1">1</button
+            ><button class="cal_button num2">2</button
+            ><button class="cal_button num3">3</button
+            ><button class="cal_button operator_button">-</button
+            ><button class="cal_button num0">0</button
+            ><button class="cal_button">.</button
+            ><button class="cal_button answer_button">=</button
+            ><button class="cal_button operator_button">+</button>
           </div>
         </div>
         <!-- calculator body end here -->
@@ -176,10 +51,7 @@
     </div>
     <!-- calculor container end here -->
     <!-- js start here -->
-    <script>
-      let currentDisplay = "";
-      document.querySelector(".display").value = currentDisplay;
-    </script>
+    <script src="js/script.js"></script>
     <!-- js end here -->
   </body>
 </html>
